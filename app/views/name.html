@@ -1,0 +1,47 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <h1 class="nhsuk-fieldset__legend--l">
+        What is your name?
+      </h1>
+
+      <form action="/templates/check-your-answers" method="post">
+
+        <p>
+          <div class="nhsuk-form-group">
+  <label class="nhsuk-label" for="event-name">
+    Full name
+  </label>
+  <input class="nhsuk-input" id="event-name" name="event-name" type="text">
+</div>
+        </p>
+
+        <p>
+          [Visit the 
+            <a href="https://beta.nhs.uk/service-manual/">NHS digital service manual</a> 
+          for guidance and examples.]
+        </p>
+
+        {{ button({
+          "text": "Continue",
+          "id": "btn_submit"
+        }) }}
+
+      </form>
+
+      {{ backLink({
+        "href": "#",
+        "text": "Change my previous answer"
+      }) }}
+
+    </div>
+  </div>
+
+{% endblock %}

@@ -1,0 +1,54 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+      {{ backLink({
+        "href": "#",
+        "text": "Back"
+      }) }}
+<div class="nhsuk-form-group">
+      <form action="/duration" method="post">
+
+  <fieldset class="nhsuk-fieldset">
+    <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">
+      <h1 class="nhsuk-fieldset__heading">
+        Is your course full time or part time?
+      </h1>
+    </legend>
+
+    <div class="nhsuk-radios">
+      <div class="nhsuk-radios__item">
+        <input class="nhsuk-radios__input" id="example-1" name="example" type="radio" value="full time">
+        <label class="nhsuk-label nhsuk-radios__label" for="example-1">
+          Full time
+        </label>
+      </div>
+      <div class="nhsuk-radios__item">
+        <input class="nhsuk-radios__input" id="example-2" name="example" type="radio" value="part time">
+        <label class="nhsuk-label nhsuk-radios__label" for="example-2">
+          Part time
+        </label>
+      </div>
+    </div>
+  </fieldset>
+
+</div>
+
+        {{ button({
+          "text": "Continue",
+          "id": "btn_submit"
+        }) }}
+
+      </form>
+
+
+
+    </div>
+  </div>
+
+{% endblock %}

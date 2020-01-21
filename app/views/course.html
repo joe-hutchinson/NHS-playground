@@ -1,0 +1,42 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+      {{ backLink({
+        "href": "#",
+        "text": "Back"
+      }) }}
+      <h1 class="nhsuk-fieldset__legend--l">
+        What course are you studying at {{ data['university'] }}?
+      </h1>
+
+      <form action="/full-time" method="post">
+
+        <p>
+          <div class="nhsuk-form-group">
+  <label class="nhsuk-label" for="course">
+    Course Name
+  </label>
+  <input class="nhsuk-input nhsuk-input--width-20" id="course" name="course" type="text">
+</div>
+        </p>
+
+
+        {{ button({
+          "text": "Continue",
+          "id": "btn_submit"
+        }) }}
+
+      </form>
+
+
+
+    </div>
+  </div>
+
+{% endblock %}

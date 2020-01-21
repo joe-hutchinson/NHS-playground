@@ -1,0 +1,49 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+      {{ backLink({
+        "href": "#",
+        "text": "Back"
+      }) }}
+<div class="nhsuk-form-group">
+      <form action="/duration" method="post">
+
+  <fieldset class="nhsuk-fieldset">
+    <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">
+      <h1 class="nhsuk-fieldset__heading">
+      What is your course duration?</h1>
+    </legend>
+
+
+<div class="govuk-form-group">
+  <div class="drop-area">
+    <label class="govuk-label" for="file-upload-1">
+      Upload a file
+    </label>
+    <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
+  </div>
+</div>
+
+  </fieldset>
+
+</div>
+
+        {{ button({
+          "text": "Continue",
+          "id": "btn_submit"
+        }) }}
+
+      </form>
+
+
+
+    </div>
+  </div>
+
+{% endblock %}

@@ -1,0 +1,108 @@
+// Import NHS.UK frontend library
+@import 'node_modules/nhsuk-frontend/packages/nhsuk';
+
+// Components that are not in the NHS.UK frontend library
+@import 'components/panel-confirmation';
+@import 'components/related-nav';
+
+///////////////////////////////////////////
+// Add your custom CSS/Sass styles below... 
+///////////////////////////////////////////
+
+//Start button
+.button-start, .button-get-started {
+    font-family: Arial, sans-serif;
+    font-weight: 700;
+    text-transform: none;
+    font-size: 18px;
+    line-height: 1.2;
+    background-image: url(../images/icon-pointer.png);
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    padding: 0.3684210526em 2.1578947368em 0.2105263158em 0.8421052632em;
+}
+.button {
+    background-color: #007f45;
+    position: relative;
+    display: -moz-inline-stack;
+    display: inline-block;
+    padding: .526315em .789473em .263157em;
+    border: none;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    outline: 1px solid transparent;
+    outline-offset: -1px;
+    -webkit-appearance: none;
+    -webkit-box-shadow: 0 2px 0 #00331b;
+    -moz-box-shadow: 0 2px 0 #00331b;
+    box-shadow: 0 2px 0 #00331b;
+    font-size: 1em;
+    line-height: 1.25;
+    text-decoration: none;
+    -webkit-font-smoothing: antialiased;
+    cursor: pointer;
+    color: #fff;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    vertical-align: top;
+    padding: 0.426315em .789473em .363157em;
+    border-bottom: 1px solid #003323;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+//File upload
+.drop-area {
+    padding: 15px;
+    text-align: center;
+    border: 2px dashed rgba(29,112,184,0.8);
+}
+@media (min-width: 48.0625em)
+.drop-area__icon {
+    width: 105px;
+    height: 105px;
+    margin: 0 20px 0 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+.drop-area__icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 10px;
+    display: block;
+}
+@media (min-width: 48.0625em)
+.drop-area {
+    padding: 30px;
+    text-align: left;
+}
+@media (min-width: 40.0625em) and (min-width: 48.0625em)
+.drop-area__instructions {
+    font-size: 19px;
+    font-size: 1.1875rem;
+    line-height: 1.31579;
+}
+@media (min-width: 48.0625em)
+.drop-area__instructions {
+    font-family: "GDS Transport",Arial,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 400;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.25;
+    display: inline-block;
+    vertical-align: middle;
+}
+.govuk-button::before, .drop-area__btn::before, .js-enabled .dft-fu__add-file-btn::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    bottom: -4px;
+    left: -2px;
+    background: transparent;
+}
