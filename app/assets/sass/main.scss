@@ -59,7 +59,7 @@
     text-align: center;
     border: 2px dashed rgba(29,112,184,0.8);
 }
-@media (min-width: 48.0625em)
+@media (min-width: 48.0625em){
 .drop-area__icon {
     width: 105px;
     height: 105px;
@@ -67,24 +67,10 @@
     display: inline-block;
     vertical-align: middle;
 }
-.drop-area__icon {
-    width: 60px;
-    height: 60px;
-    margin: 0 auto 10px;
-    display: block;
-}
-@media (min-width: 48.0625em)
 .drop-area {
     padding: 30px;
     text-align: left;
 }
-@media (min-width: 40.0625em) and (min-width: 48.0625em)
-.drop-area__instructions {
-    font-size: 19px;
-    font-size: 1.1875rem;
-    line-height: 1.31579;
-}
-@media (min-width: 48.0625em)
 .drop-area__instructions {
     font-family: "GDS Transport",Arial,sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -96,6 +82,22 @@
     display: inline-block;
     vertical-align: middle;
 }
+}
+.drop-area__icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 10px;
+    display: block;
+}
+
+@media (min-width: 40.0625em) and (min-width: 48.0625em) {
+.drop-area__instructions {
+    font-size: 19px;
+    font-size: 1.1875rem;
+    line-height: 1.31579;
+}
+}
+
 .govuk-button::before, .drop-area__btn::before, .js-enabled .dft-fu__add-file-btn::before {
     content: "";
     display: block;
