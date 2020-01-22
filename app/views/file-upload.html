@@ -11,28 +11,29 @@
         "href": "#",
         "text": "Back"
       }) }}
-<div class="nhsuk-form-group">
-      <form action="/duration" method="post">
+      <div class="nhsuk-form-group">
+        <form action="/duration" method="post">
 
-  <fieldset class="nhsuk-fieldset">
-    <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">
-      <h1 class="nhsuk-fieldset__heading">
-      Add a photo of your passport</h1>
-    </legend>
+          <fieldset class="nhsuk-fieldset">
+            <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">
+              <h1 class="nhsuk-fieldset__heading">
+              Upload your passport identification page</h1>
+            </legend>
 
+            <p>Only the passport identification page needs to be uploaded.</P>
+            <p>Upload can be a clear photograph of the passport identification page or a scan</P>
 
-<div class="govuk-form-group">
-  <div class="drop-area">
-    <label class="govuk-label" for="file-upload-1">
-      Upload a file
-    </label>
-    <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
-  </div>
-</div>
+          <div class="govuk-form-group">
+            <div class="drop-area">
+              <label class="govuk-label" for="file-upload-1">
+                Upload a file
+              </label>
+              <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
+            </div>
+          </div>
 
-  </fieldset>
-
-</div>
+          </fieldset>
+      </div>
 
         {{ button({
           "text": "Continue",
@@ -43,7 +44,18 @@
 
 
 
+
     </div>
+  <div class="nhsuk-grid-column-one-third">
+    <figure class="nhsuk-image">
+      <img class="nhsuk-image__img" src="../images/passport-template.jpg" alt="Picture of an example passport identification page">
+      <figcaption class="nhsuk-image__caption">
+        Example passport identification page
+      </figcaption>
+    </figure>
+  </div>   
+
+
   </div>
 
 {% endblock %}
